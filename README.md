@@ -1,4 +1,4 @@
-# TinkerDB
+# <img src="docs/logo.jpeg" alt="TinkerDB Logo" width="50" height="70"> TinkerDB
 
 A distributed key-value database in Go, built as an educational project to learn distributed systems concepts through hands-on implementation.
 
