@@ -27,3 +27,9 @@ For detailed project requirements, milestones, and technical specifications, see
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. However, while the code is available under an open source license, this is currently a **personal educational project** and is **not accepting contributions** at this time.
+
+## Meet Tink - the unofficial mascot for TinkerDB until a better image generation model comes out :)
+<div align="center">
+  <img src="docs/logo.jpeg" alt="TinkerDB 
+  Logo" width="200">
+</div>
