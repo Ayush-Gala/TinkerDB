@@ -1,0 +1,4 @@
+Check if the port has been exposed anywhere in the code and replace it with the .env port value
+
+Remove tenant ID from CLI and make user enter it in the CLI launch command. Think of ways in which this can be made persistant. Study linux user management - just a hunch.
+Add separate documentation for APIs. - will be useful during MCP integration in the future

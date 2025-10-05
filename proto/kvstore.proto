@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package kvstore;
+
+option go_package = "github.com/ayushgala/tinkerdb/proto";
+
+// KVStore service defines the key-value storage operations
+service KVStore {
+  // Set stores a key-value pair for a tenant
+  rpc Set(SetRequest) returns (SetResponse);
+  
+  // Get retrieves a value for a key in a tenant namespace
+  rpc Get(GetRequest) returns (GetResponse);
+  
+  // Delete removes a key from a tenant namespace
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+  
+  // Exists checks if a key exists in a tenant namespace
+  rpc Exists(ExistsRequest) returns (ExistsResponse);
+  
+  // Keys retrieves all keys in a tenant namespace
+  rpc Keys(KeysRequest) returns (KeysResponse);
+}
+
+// SetRequest contains the tenant ID, key, and value to store
+message SetRequest {
+  string tenant_id = 1;
+  string key = 2;
+  bytes value = 3;
+}
+
+message SetResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// GetRequest contains the tenant ID and key to retrieve
+message GetRequest {
+  string tenant_id = 1;
+  string key = 2;
+}
+
+message GetResponse {
+  bool found = 1;
+  bytes value = 2;
+  string message = 3;
+}
+
+// DeleteRequest contains the tenant ID and key to delete
+message DeleteRequest {
+  string tenant_id = 1;
+  string key = 2;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// ExistsRequest contains the tenant ID and key to check
+message ExistsRequest {
+  string tenant_id = 1;
+  string key = 2;
+}
+
+message ExistsResponse {
+  bool exists = 1;
+}
+
+// KeysRequest contains the tenant ID to list keys for
+message KeysRequest {
+  string tenant_id = 1;
+}
+
+message KeysResponse {
+  repeated string keys = 1;
+}
+

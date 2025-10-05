@@ -14,11 +14,15 @@ TinkerDB is a personal learning project that aims to build a fully functional di
 
 ## Current Status
 
-This project is currently in **active development** and is **not open source** at this time. It's a personal educational endeavor to deepen understanding of distributed systems, consensus algorithms, and eventually venture into database internals.
+### Milestone - 1 in progress
+
+This project is currently in **active development** and is **open source**. Since it is still under development, I am not accepting contributions at this time. It's a personal educational endeavor to deepen understanding of distributed systems, consensus algorithms, and eventually venture into database internals.
 
 ## Getting Started
 
-For detailed project requirements, milestones, and technical specifications, see [REQUIREMENTS.md](./REQUIREMENTS.md).
+- For detailed project requirements, milestones, and technical specifications, see [REQUIREMENTS.md](./REQUIREMENTS.md).
+- To set up the project or troubleshoot errors, see [SETUP.md](./SETUP.md)
+- If you already have the project set up, use [QUICKSTART.md](./QUICKSTART.md) to jump right in.
 
 ## Tech Stack (last updated 10/2/2025)
 
